@@ -12,6 +12,7 @@ class User < ApplicationRecord
 
     validates :username, presence: true
     validates :full_name, presence: true
-    validates :password_hash, presence: true
+    validates :email, presence: true
+    validates :password, presence: true
 
 end
