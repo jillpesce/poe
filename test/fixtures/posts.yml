@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  author: MyString
+  text: MyText
+  timestamp: 2020-12-18 02:13:14
+  user: one
+
+two:
+  author: MyString
+  text: MyText
+  timestamp: 2020-12-18 02:13:14
+  user: two
