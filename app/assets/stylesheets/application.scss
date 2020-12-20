@@ -17,7 +17,7 @@
 
  $theme-colors: (
     "primary": #01256e,
-    "secondary": #95001a
+    "secondary": rgb(223, 219, 186)
   );
   
   
@@ -27,8 +27,10 @@
   @import "bootstrap";
   @import "font-awesome";
   @import "bootstrap-sprockets";
-@import "bootstrap";
   
+// Variables
+@import "base/variables";
+
   /* 
    * Custom Styles
    */
@@ -43,8 +45,6 @@
   
   h1 {
     font-size: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
     color: #01256e;
     font-weight: 500;
     line-height: 1.25;

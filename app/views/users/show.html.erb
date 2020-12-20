@@ -11,8 +11,8 @@
 </div>
 </div>
 <p><%= @user.username %></p>
-<% @user.posts.each do |post| %>
-<p><%= post.text %></p>
-<% end %>
+
+<p><%= render @user.posts.reverse %></p>
+
 </div>
 </div>

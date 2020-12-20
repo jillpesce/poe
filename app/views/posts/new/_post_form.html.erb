@@ -14,5 +14,7 @@
                     maxlength: 1000,
                     placeholder: 'Dare to be creative!', 
                     class: 'form-control' %>
+                      <%= f.label :all_tags, "Tags (optional)" %>
+                      <%= f.text_field :all_tags, placeholder: "Tags separated with comma" %>  
     <%= f.submit "Create a post", class: 'form-control' %>
   <% end %>

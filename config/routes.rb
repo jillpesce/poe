@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get '/search', to: 'searches#new'
   post '/search', to: 'searches#show'
+  get '/tags/:tag', to: 'posts#index', as: "tag"
 
   resources :users, only: [:index, :show, :new, :create]
   resources :posts, only: [:index, :show, :new, :create]
@@ -15,4 +16,5 @@ Rails.application.routes.draw do
   devise_scope :user do
     get 'signup', to: 'devise/registrations#new'
   end
+  
 end
