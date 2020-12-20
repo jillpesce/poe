@@ -1,6 +1,6 @@
 <h1>Poem: <%= @post.title %></h1>
 <p><%= @post.text %></p>
 <div class="tags">
-Tags: <%=raw tag_links(post.all_tags)%>
+Tags: <%=raw tag_links(@post.all_tags)%>
 </div>
 <p>Posted by <strong><%= link_to @post.user.username, user_path(@post.user_id) %></strong> on <%= @post.created_at.to_date %></p>

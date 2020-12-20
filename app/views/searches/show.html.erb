@@ -1,2 +1,4 @@
 <h1><%=@title%></h1>
-<h2><%=@poem%></h2>
+<% @poem.each do |line| %>
+    <h3><%= line %></h3>
+    <% end %>
