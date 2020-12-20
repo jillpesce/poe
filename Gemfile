@@ -14,6 +14,7 @@ gem 'faker'
 gem 'will_paginate', '~> 3.1.0'
 gem 'image_processing'
 gem 'mini_magick'
+gem "httparty"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.4'
