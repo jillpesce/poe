@@ -1,10 +1,10 @@
-<div class="single-post-card" id=<%= user_posts_path(post.id) %>>
+<div class="single-post-card" id=<%= post_path(post.id) %>>
   <div class="card">
     <div class="card-block">
       <h4 class="post-text">
       </h4>
       <div class="post-content">
-             <h1 class="card-header"> <%= link_to post.title, [post.user, post] %> </h1>
+             <h1 class="card-header"> <%= link_to post.title, post_path(post.id)%> </h1>
 
         <strong><%= link_to post.user.username, user_path(post.user_id) %></strong>
         <%= post.created_at.to_date %>
@@ -12,7 +12,6 @@
         <div class="tags">
         Tags: <%=raw tag_links(post.all_tags)%>
       </div>
-      <p>___________________</p>
       </div>
     </div>
   </div><!-- card -->

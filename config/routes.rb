@@ -5,9 +5,9 @@ Rails.application.routes.draw do
   post '/search', to: 'searches#show'
   get '/tags/:tag', to: 'posts#index', as: "tag"
 
-  resources :users, only: [:index, :show, :new, :create] do 
-    resources :posts, only: [:index, :show, :new, :create]
-  end
+  resources :users, only: [:index, :show, :new, :create]
+  resources :posts, only: [:index, :show, :new, :create]
+
 
   devise_scope :user do
     get 'login', to: 'devise/sessions#new'
