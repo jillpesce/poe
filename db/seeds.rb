@@ -33,7 +33,7 @@ def seed_users
      users.each do |user|
       5.times do
         Post.create(
-          author: Faker::Lorem.sentences[0], 
+          title: Faker::Lorem.sentences[0], 
           text: Faker::Lorem.sentences[0], 
           user: user
         )

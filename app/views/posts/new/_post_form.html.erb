@@ -1,0 +1,18 @@
+<%= bootstrap_form_for(@posts) do |f| %>
+    <%= f.text_field  :title, 
+                      maxlength: 100, 
+                      placeholder: 'Title', 
+                      class: 'form-control',
+                      required: true, 
+                      minlength: 3,
+                      maxlength: 100 %>
+    <%= f.hidden_field :branch, :value => @branch %>
+    <%= f.text_area :text, 
+                    rows: 6,
+                    required: true, 
+                    minlength: 5,
+                    maxlength: 1000,
+                    placeholder: 'Dare to be creative!', 
+                    class: 'form-control' %>
+    <%= f.submit "Create a post", class: 'form-control' %>
+  <% end %>

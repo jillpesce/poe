@@ -22,6 +22,8 @@ class: 'form-control' %>
 <%= f.password_field :password, 
       placeholder: 'password', 
       class: 'form-control' %>
+        <%= f.label :cover_photo %>
+        <%= f.file_field :avatar %>
 <%= f.submit 'Sign up', class: 'btn sign-up-button' %>
 <% end %>
 		

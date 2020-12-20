@@ -3,6 +3,8 @@ class Post < ApplicationRecord
   has_many :associations, dependent: :destroy
   has_many :tags, through: :associations
 
-  validates :user, presence: true
-  validates :text, presence: true
+  validates :title, presence: true, length: { minimum: 3, maximum: 255 }
+  validates :text, presence: true, length: { minimum: 5, maximum: 1000 }
+
+
 end

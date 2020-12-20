@@ -1,0 +1,14 @@
+<div class="col-sm-3 single-post-card" id=<%= post_path(post.id) %>>
+  <div class="card">
+    <div class="card-block">
+      <h4 class="post-text">
+      </h4>
+      <div class="post-content">
+        <strong><%= link_to post.user.username, user_path(post.user_id) %></strong>
+        <%= post.created_at.to_date %>
+        <p><%= post.text %></p>
+        <%= link_to "Show More", post_path(post.id), class: 'interested' %>
+      </div>
+    </div>
+  </div><!-- card -->
+</div><!-- col-sm-3 -->

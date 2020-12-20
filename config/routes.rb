@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users, :controllers => {:registrations => "registrations"}
   root to: 'pages#home'
-  resources :users
+  resources :users, only: [:index, :show, :new, :create]
+  resources :posts, only: [:index, :show, :new, :create]
 
   devise_scope :user do
     get 'login', to: 'devise/sessions#new'
